@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="View Ticket" max_length="40" name="x_184542_itil_work_view_ticket" type="collection">
+        <element default="Test Description" label="Description" max_length="2000" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" display="true" label="Source" mandatory="true" max_length="40" name="source" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="CHANGE" value="2"/>
+                <element inactive_on_update="false" label="INCIDENT" value="1"/>
+                <element inactive_on_update="false" label="PROBLEM" value="3"/>
+            </choice>
+        </element>
+    </element>
+</database>
